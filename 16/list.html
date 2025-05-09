@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User List</title>
+</head>
+<body>
+
+<h2>User List</h2>
+
+<table border="1">
+  <tr>
+    <th>First</th>
+    <th>Last</th>
+    <th>DOB</th>
+    <th>Gender</th>
+    <th>Mobile</th>
+    <th>Email</th>
+  </tr>
+  <tbody id="data"></tbody>
+</table>
+
+<script>
+var users = JSON.parse(localStorage.getItem("users")) || [];
+var out = "";
+users.forEach(function(u) {
+  out += "<tr><td>" + u.fname + "</td><td>" + u.lname + "</td><td>" +
+         u.dob + "</td><td>" + u.gender + "</td><td>" +
+         u.mobile + "</td><td>" + u.email + "</td></tr>";
+});
+document.getElementById("data").innerHTML = out;
+</script>
+
+</body>
+</html>

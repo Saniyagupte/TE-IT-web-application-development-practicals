@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    </head>
+<body>
+    <div data-role="page" id="feedback">
+        <div data-role="header">
+            <h1>Feedback form</h1>
+        </div>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+
+        <label for="message">Message:</label>
+        <input type="textarea" name="message">
+
+        <lablel for="recommend">Recommend us</lablel>
+        <select name="recommend" id="recommend" data-role="slider">
+            <option value="no">No</option>
+                <option value="yes">Yes</option>
+        </select>
+        <input type="submit" value="Submit">
+    </div>
+</body>
+</html>

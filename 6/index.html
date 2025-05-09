@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Medical Emergency Services</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f4f6f7;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+
+        .service-card {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .btn-contact {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        .btn-contact:hover {
+            background-color: #218838;
+            color: white;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>City Medical Emergency Services</h1>
+    </header>
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Medical Services</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="window.location.href='#contact-us';">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h2 class="text-center my-5">Our Emergency Medical Services</h2>
+        <div class="row">
+            <!-- Service 1: Ambulance -->
+            <div class="col-md-4">
+                <div class="service-card text-center">
+                    <img src="https://via.placeholder.com/100?text=Ambulance" alt="Ambulance">
+                    <h3>Ambulance Service</h3>
+                    <p>24/7 ambulance service to reach you wherever you are in the city.</p>
+                </div>
+            </div>
+
+            <!-- Service 2: First Aid -->
+            <div class="col-md-4">
+                <div class="service-card text-center">
+                    <img src="https://via.placeholder.com/100?text=First+Aid" alt="First Aid">
+                    <h3>First Aid</h3>
+                    <p>Immediate first aid support to stabilize patients before reaching the hospital.</p>
+                </div>
+            </div>
+
+            <!-- Service 3: Emergency Helpline -->
+            <div class="col-md-4">
+                <div class="service-card text-center">
+                    <img src="https://via.placeholder.com/100?text=Helpline" alt="Emergency Helpline">
+                    <h3>Emergency Helpline</h3>
+                    <p>Call our 24/7 emergency helpline for immediate assistance in medical emergencies.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us Button -->
+        <div class="text-center">
+            <button class="btn-contact" onclick="window.location.href='#contact-us';">Contact Us</button>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact-us" class="container my-5">
+        <h2 class="text-center">Contact Us</h2>
+        <p class="text-center">For emergencies or inquiries, please contact us through the following:</p>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Email: <a href="mailto:emergency@city.com">emergency@city.com</a></p>
+                <p>Phone: +1 (234) 567-890</p>
+            </div>
+            <div class="col-md-6">
+                <p>Address: 123 Emergency St, City, Country</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 City Medical Emergency Services | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

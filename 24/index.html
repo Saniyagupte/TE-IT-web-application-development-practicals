@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery Mobile CSS and JS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .menu-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .menu-title {
+      color: darkred;
+      font-weight: bold;
+      font-size: 1.4em;
+    }
+    .menu-desc {
+      color: #444;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header" data-theme="b">
+    <h1>Our Menu</h1>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+      <li><a href="#item1">Pizza</a></li>
+      <li><a href="#item2">Burger</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Item 1 Page -->
+<div data-role="page" id="item1">
+  <div data-role="header" data-theme="b">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Pizza</h1>
+  </div>
+  <div data-role="content">
+    <img src="https://via.placeholder.com/300x200?text=Pizza" class="menu-img" alt="Pizza">
+    <div class="menu-title">Delicious Pizza</div>
+    <div class="menu-desc">Freshly baked with mozzarella, tomatoes, and basil.</div>
+  </div>
+</div>
+
+<!-- Item 2 Page -->
+<div data-role="page" id="item2">
+  <div data-role="header" data-theme="b">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Burger</h1>
+  </div>
+  <div data-role="content">
+    <img src="https://via.placeholder.com/300x200?text=Burger" class="menu-img" alt="Burger">
+    <div class="menu-title">Juicy Burger</div>
+    <div class="menu-desc">Grilled beef patty with cheese, lettuce, and tomato.</div>
+  </div>
+</div>
+
+</body>
+</html>

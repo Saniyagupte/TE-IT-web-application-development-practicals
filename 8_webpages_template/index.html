@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal Name</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body style="background-color: #f0f8ff; font-family: sans-serif;">
+
+  <!-- Header -->
+  <header class="text-center p-4 bg-primary text-white">
+    <h1>My Portal Name</h1>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Portal</a>
+    
+    <div class="collapse navbar-collapse" id="navItems">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <div class="container mt-4 text-center">
+    <h3>Our Services</h3>
+    <div class="row">
+      <div class="col-md-4 p-2">
+        <img src="https://via.placeholder.com/200" class="img-fluid" alt="Service 1"/>
+        <p>Service 1 Description</p>
+      </div>
+      <div class="col-md-4 p-2">
+        <img src="https://via.placeholder.com/200" class="img-fluid" alt="Service 2"/>
+        <p>Service 2 Description</p>
+      </div>
+      <div class="col-md-4 p-2">
+        <img src="https://via.placeholder.com/200" class="img-fluid" alt="Service 3"/>
+        <p>Service 3 Description</p>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <button class="btn btn-success mt-3" onclick="showDetails()">Click for More Info</button>
+
+    <!-- Info Output -->
+    <div id="info" class="mt-4"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    &copy; 2025 My Portal | All Rights Reserved
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function showDetails() {
+      document.getElementById('info').innerHTML = `
+        <h4>More Information</h4>
+        <p>This section displays extra content like offers, syllabus, how to reach, contact info, etc. depending on your topic.</p>`;
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

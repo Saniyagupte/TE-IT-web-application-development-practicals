@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            User Registration
+        </title>
+    </head>
+    <body>
+        <form id="registration">
+            <input type="text" id="fname">
+            <input type="text" id="lname">
+            <input type="date" id="dob">
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="email" id="email">
+            <input type="number" id="phone">
+            <button type="button" onClick="saveData()">Submit</button>
+
+        </form>
+        <script>
+            function saveData(){
+                var fname=document.getElementById('fname').value;
+                var lname=document.getElementById('lname').value;
+                var dob=document.getElementById('dob').value;
+                var gender=document.querySelector('input[name="gender"]:checked').value;
+                
+                var email=document.getElementById('email').value;
+                var phone=document.getElementById('phone').value;
+
+                var user={fname:fname , lname:lname  , dob:dob ,gender:gender, phone:phone , email:email }
+
+                let users=JSON.parse(localStorage.getItem('users')) || [];
+                users.push(user);
+                localStorage.setItem('users' , JSON.stringify(users));
+
+                window.location.href="practice_list.html";
+
+
+            }
+        </script>
+    </body>
+</html>

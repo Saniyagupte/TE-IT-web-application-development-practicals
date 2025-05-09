@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYCITY</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .city-name {
+            font-size: 48px;
+            text-align: center;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+
+        .landmark-button {
+            margin: 20px;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .landmark-button:hover {
+            opacity: 0.7;
+        }
+
+        .landmark-button-1 {
+            background-color: #ff6347;
+            color: white;
+        }
+
+        .landmark-button-2 {
+            background-color: #1e90ff;
+            color: white;
+        }
+
+        .landmark-button-3 {
+            background-color: #32cd32;
+            color: white;
+        }
+
+        .landmark-info {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="city-name">MYCITY</h1>
+        </div>
+    </header>
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">MYCITY</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Landmarks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Landmarks in MYCITY</h2>
+                <button class="landmark-button landmark-button-1" onclick="showInfo('landmark1')">Landmark 1</button>
+                <button class="landmark-button landmark-button-2" onclick="showInfo('landmark2')">Landmark 2</button>
+                <button class="landmark-button landmark-button-3" onclick="showInfo('landmark3')">Landmark 3</button>
+            </div>
+        </div>
+
+        <!-- Landmark Information Section -->
+        <div id="landmark-info" class="landmark-info"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 MYCITY | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for handling button click -->
+    <script>
+        function showInfo(landmark) {
+            var infoText = '';
+            if (landmark === 'landmark1') {
+                infoText = '<h3>Landmark 1 - Great Park</h3><img src="https://via.placeholder.com/600x300?text=Great+Park" class="img-fluid" alt="Great Park"><p>This is the most famous park in MYCITY, known for its beautiful scenery and family-friendly activities.</p>';
+            } else if (landmark === 'landmark2') {
+                infoText = '<h3>Landmark 2 - City Tower</h3><img src="https://via.placeholder.com/600x300?text=City+Tower" class="img-fluid" alt="City Tower"><p>The City Tower is the tallest building in MYCITY offering breathtaking views of the skyline.</p>';
+            } else if (landmark === 'landmark3') {
+                infoText = '<h3>Landmark 3 - Historic Museum</h3><img src="https://via.placeholder.com/600x300?text=Historic+Museum" class="img-fluid" alt="Historic Museum"><p>The Historic Museum displays the rich cultural heritage of MYCITY and is a must-visit for history enthusiasts.</p>';
+            }
+
+            document.getElementById('landmark-info').innerHTML = infoText;
+        }
+    </script>
+    
+</body>
+</html>

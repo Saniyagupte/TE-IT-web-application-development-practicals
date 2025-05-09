@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Portal Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="dashboard">
+
+    <div data-role="header">
+        <h1>College Dashboard</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#dashboard" class="ui-btn-active">Home</a></li>
+                <li><a href="#notices">Notices</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <input type="search" id="search" placeholder="Search...">
+
+        <h2>Welcome to College Portal</h2>
+        <p>This dashboard provides quick access to student information, notices, and more.</p>
+
+        <h3>Latest Updates</h3>
+        <ul data-role="listview">
+            <li>Exam Time Table Released</li>
+            <li>Admission Portal Open</li>
+            <li>Sports Day Announcement</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Other Pages -->
+<div data-role="page" id="notices">
+    <div data-role="header"><h1>Notices</h1></div>
+    <div data-role="content">
+        <p>All college-related notices will appear here.</p>
+    </div>
+</div>
+
+<div data-role="page" id="profile">
+    <div data-role="header"><h1>Profile</h1></div>
+    <div data-role="content">
+        <p>Student Profile Info</p>
+    </div>
+</div>
+
+</body>
+</html>

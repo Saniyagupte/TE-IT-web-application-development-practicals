@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            flight booking
+        </title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+
+    <body>
+        <h3>flight air india</h3>
+        <div data-role="page" id="booking">
+            <div data-role="navbar">
+                <ul>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#cancel">CancelBooking</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+            </div>
+            
+            <div data-role="content">
+                <input type="search" placeholder="search">
+                <h3>Flight selection</h3>
+                <input type="text" placeholder="to">
+                <input type="text" placeholder="from">
+                <input type="date" placeholder="to">
+                <input type="number" placeholder="seats">
+                <button type="submit">Browse</button>
+                <p></p>
+            </div>
+        </div>
+    
+        <div data-role="page" id="cancel">
+            <div data-role="content">
+                <p>info you can cancel</p>
+            </div>
+        </div>
+
+        <div data-role="page" id="profile">
+            <div data-role="content">
+                <p>user</p>
+            </div>
+        </div>
+    </body>
+</html>

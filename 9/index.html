@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPPU TE-IT Syllabus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    .header-img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SPPU TE-IT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Header image -->
+  <div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/65/Savitribai_Phule_Pune_University_Logo.png" class="header-img" alt="SPPU Logo">
+  </div>
+
+  <!-- Main Content -->
+  <div class="container my-4">
+    <h2 class="text-center mb-4">TE Information Technology Syllabus Structure</h2>
+    
+    <!-- Overview -->
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Semester-wise Subjects</h5>
+        <p class="card-text">Click the button below to view the detailed syllabus for TE IT students as per SPPU 2019 Pattern.</p>
+        <button class="btn btn-primary" onclick="toggleSyllabus()">Show / Hide Detailed Syllabus</button>
+      </div>
+    </div>
+
+    <!-- Hidden syllabus details -->
+    <div id="syllabusDetails" style="display: none;">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Semester 5</h5>
+          <ul>
+            <li>Software Engineering & Project Management</li>
+            <li>Web Technologies</li>
+            <li>Artificial Intelligence</li>
+            <li>Computer Networks & Security</li>
+            <li>Database Management Lab</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Semester 6</h5>
+          <ul>
+            <li>Machine Learning</li>
+            <li>Cloud Computing</li>
+            <li>Information & Cyber Security</li>
+            <li>Professional Electives</li>
+            <li>Mini Project</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Savitribai Phule Pune University - TE IT Department</p>
+  </div>
+
+  <!-- Bootstrap JS and Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleSyllabus() {
+      var details = document.getElementById("syllabusDetails");
+      if (details.style.display === "none") {
+        details.style.display = "block";
+      } else {
+        details.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
